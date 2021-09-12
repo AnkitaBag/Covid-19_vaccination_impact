@@ -1,0 +1,2437 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='india_concern_side_effects' inline='true' name='federated.02qvrzo0leqr5m1h9naim0g33afo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='india_concern_side_effects' name='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Ankita/Desktop/Master Project/Tableau/Dataset_01/India' filename='india_concern_side_effects.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[india_concern_side_effects.json+]'>
+                  <map key='data' value='true' />
+                  <map key='data.Value' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+                <semistruct-schema table='[india_concern_side_effects.json]'>
+                  <map key='data' value='false' />
+                  <map key='data.Value' value='false' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='india_concern_side_effects.json+' type='union'>
+          <columns>
+            <column datatype='string' name='Table Name' />
+            <column datatype='integer' name='Document Index (generated)' />
+            <column datatype='integer' name='data.Index (generated)' />
+            <column datatype='real' name='data.Value.barrier_reason_dontbelieve_se' />
+            <column datatype='real' name='data.Value.barrier_reason_dontbelieve_se_unw' />
+            <column datatype='real' name='data.Value.barrier_reason_dontlike_se' />
+            <column datatype='real' name='data.Value.barrier_reason_dontlike_se_unw' />
+            <column datatype='real' name='data.Value.barrier_reason_waitlater_se' />
+            <column datatype='real' name='data.Value.barrier_reason_waitlater_se_unw' />
+            <column datatype='real' name='data.Value.barrier_reason_wontwork_se' />
+            <column datatype='real' name='data.Value.barrier_reason_wontwork_se_unw' />
+            <column datatype='real' name='data.Value.concerned_sideeffects_se' />
+            <column datatype='real' name='data.Value.concerned_sideeffects_se_unw' />
+            <column datatype='string' name='data.Value.country' />
+            <column datatype='string' name='data.Value.gid_0' />
+            <column datatype='string' name='data.Value.iso_code' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontbelieve' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontbelieve_unw' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontlike' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontlike_unw' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_waitlater' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_waitlater_unw' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_wontwork' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_wontwork_unw' />
+            <column datatype='real' name='data.Value.pct_concerned_sideeffects' />
+            <column datatype='real' name='data.Value.pct_concerned_sideeffects_unw' />
+            <column datatype='real' name='data.Value.pct_vaccine_barrier_no_appointments' />
+            <column datatype='real' name='data.Value.pct_vaccine_barrier_no_appointments_unw' />
+            <column datatype='real' name='data.Value.sample_size' />
+            <column datatype='string' name='data.Value.survey_date' />
+            <column datatype='real' name='data.Value.vaccine_barrier_no_appointments_se' />
+            <column datatype='real' name='data.Value.vaccine_barrier_no_appointments_se_unw' />
+            <column datatype='string' name='status' />
+          </columns>
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_concern_side_effects.json' table='[india_concern_side_effects.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_barrier_no_appointments.json' table='[india_vaccine_barrier_no_appointments.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_dont_belive.json' table='[india_vaccine_dont_belive.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_dont_like.json' table='[india_vaccine_dont_like.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_wont_work.json' table='[india_vaccine_wont_work.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_wait_later.json' table='[india_wait_later.json]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='india_concern_side_effects.json+' type='union'>
+          <columns>
+            <column datatype='string' name='Table Name' />
+            <column datatype='integer' name='Document Index (generated)' />
+            <column datatype='integer' name='data.Index (generated)' />
+            <column datatype='real' name='data.Value.barrier_reason_dontbelieve_se' />
+            <column datatype='real' name='data.Value.barrier_reason_dontbelieve_se_unw' />
+            <column datatype='real' name='data.Value.barrier_reason_dontlike_se' />
+            <column datatype='real' name='data.Value.barrier_reason_dontlike_se_unw' />
+            <column datatype='real' name='data.Value.barrier_reason_waitlater_se' />
+            <column datatype='real' name='data.Value.barrier_reason_waitlater_se_unw' />
+            <column datatype='real' name='data.Value.barrier_reason_wontwork_se' />
+            <column datatype='real' name='data.Value.barrier_reason_wontwork_se_unw' />
+            <column datatype='real' name='data.Value.concerned_sideeffects_se' />
+            <column datatype='real' name='data.Value.concerned_sideeffects_se_unw' />
+            <column datatype='string' name='data.Value.country' />
+            <column datatype='string' name='data.Value.gid_0' />
+            <column datatype='string' name='data.Value.iso_code' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontbelieve' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontbelieve_unw' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontlike' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_dontlike_unw' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_waitlater' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_waitlater_unw' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_wontwork' />
+            <column datatype='real' name='data.Value.pct_barrier_reason_wontwork_unw' />
+            <column datatype='real' name='data.Value.pct_concerned_sideeffects' />
+            <column datatype='real' name='data.Value.pct_concerned_sideeffects_unw' />
+            <column datatype='real' name='data.Value.pct_vaccine_barrier_no_appointments' />
+            <column datatype='real' name='data.Value.pct_vaccine_barrier_no_appointments_unw' />
+            <column datatype='real' name='data.Value.sample_size' />
+            <column datatype='string' name='data.Value.survey_date' />
+            <column datatype='real' name='data.Value.vaccine_barrier_no_appointments_se' />
+            <column datatype='real' name='data.Value.vaccine_barrier_no_appointments_se_unw' />
+            <column datatype='string' name='status' />
+          </columns>
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_concern_side_effects.json' table='[india_concern_side_effects.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_barrier_no_appointments.json' table='[india_vaccine_barrier_no_appointments.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_dont_belive.json' table='[india_vaccine_dont_belive.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_dont_like.json' table='[india_vaccine_dont_like.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_wont_work.json' table='[india_vaccine_wont_work.json]' type='table' />
+          <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_wait_later.json' table='[india_wait_later.json]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Document Index (generated)]' value='[india_concern_side_effects.json+].[Document Index (generated)]' />
+          <map key='[Table Name]' value='[india_concern_side_effects.json+].[Table Name]' />
+          <map key='[barrier_reason_dontbelieve_se]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_dontbelieve_se]' />
+          <map key='[barrier_reason_dontbelieve_se_unw]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_dontbelieve_se_unw]' />
+          <map key='[barrier_reason_dontlike_se]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_dontlike_se]' />
+          <map key='[barrier_reason_dontlike_se_unw]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_dontlike_se_unw]' />
+          <map key='[barrier_reason_waitlater_se]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_waitlater_se]' />
+          <map key='[barrier_reason_waitlater_se_unw]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_waitlater_se_unw]' />
+          <map key='[barrier_reason_wontwork_se]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_wontwork_se]' />
+          <map key='[barrier_reason_wontwork_se_unw]' value='[india_concern_side_effects.json+].[data.Value.barrier_reason_wontwork_se_unw]' />
+          <map key='[concerned_sideeffects_se]' value='[india_concern_side_effects.json+].[data.Value.concerned_sideeffects_se]' />
+          <map key='[concerned_sideeffects_se_unw]' value='[india_concern_side_effects.json+].[data.Value.concerned_sideeffects_se_unw]' />
+          <map key='[country]' value='[india_concern_side_effects.json+].[data.Value.country]' />
+          <map key='[data Index (generated)]' value='[india_concern_side_effects.json+].[data.Index (generated)]' />
+          <map key='[gid_0]' value='[india_concern_side_effects.json+].[data.Value.gid_0]' />
+          <map key='[iso_code]' value='[india_concern_side_effects.json+].[data.Value.iso_code]' />
+          <map key='[pct_barrier_reason_dontbelieve]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_dontbelieve]' />
+          <map key='[pct_barrier_reason_dontbelieve_unw]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_dontbelieve_unw]' />
+          <map key='[pct_barrier_reason_dontlike]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_dontlike]' />
+          <map key='[pct_barrier_reason_dontlike_unw]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_dontlike_unw]' />
+          <map key='[pct_barrier_reason_waitlater]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_waitlater]' />
+          <map key='[pct_barrier_reason_waitlater_unw]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_waitlater_unw]' />
+          <map key='[pct_barrier_reason_wontwork]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_wontwork]' />
+          <map key='[pct_barrier_reason_wontwork_unw]' value='[india_concern_side_effects.json+].[data.Value.pct_barrier_reason_wontwork_unw]' />
+          <map key='[pct_concerned_sideeffects]' value='[india_concern_side_effects.json+].[data.Value.pct_concerned_sideeffects]' />
+          <map key='[pct_concerned_sideeffects_unw]' value='[india_concern_side_effects.json+].[data.Value.pct_concerned_sideeffects_unw]' />
+          <map key='[pct_vaccine_barrier_no_appointments]' value='[india_concern_side_effects.json+].[data.Value.pct_vaccine_barrier_no_appointments]' />
+          <map key='[pct_vaccine_barrier_no_appointments_unw]' value='[india_concern_side_effects.json+].[data.Value.pct_vaccine_barrier_no_appointments_unw]' />
+          <map key='[sample_size]' value='[india_concern_side_effects.json+].[data.Value.sample_size]' />
+          <map key='[status]' value='[india_concern_side_effects.json+].[status]' />
+          <map key='[survey_date]' value='[india_concern_side_effects.json+].[data.Value.survey_date]' />
+          <map key='[vaccine_barrier_no_appointments_se]' value='[india_concern_side_effects.json+].[data.Value.vaccine_barrier_no_appointments_se]' />
+          <map key='[vaccine_barrier_no_appointments_se_unw]' value='[india_concern_side_effects.json+].[data.Value.vaccine_barrier_no_appointments_se_unw]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data Index (generated)]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_dontbelieve_se</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_dontbelieve_se]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_dontbelieve_se</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_dontbelieve_se_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_dontbelieve_se_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_dontbelieve_se_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_dontlike_se</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_dontlike_se]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_dontlike_se</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_dontlike_se_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_dontlike_se_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_dontlike_se_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_waitlater_se</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_waitlater_se]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_waitlater_se</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_waitlater_se_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_waitlater_se_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_waitlater_se_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_wontwork_se</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_wontwork_se]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_wontwork_se</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.barrier_reason_wontwork_se_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[barrier_reason_wontwork_se_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.barrier_reason_wontwork_se_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.concerned_sideeffects_se</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[concerned_sideeffects_se]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.concerned_sideeffects_se</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.concerned_sideeffects_se_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[concerned_sideeffects_se_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.concerned_sideeffects_se_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.country</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.gid_0</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gid_0]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.gid_0</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.iso_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.iso_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_dontbelieve</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_dontbelieve]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_dontbelieve</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_dontbelieve_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_dontbelieve_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_dontbelieve_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_dontlike</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_dontlike]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_dontlike</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_dontlike_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_dontlike_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_dontlike_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_waitlater</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_waitlater]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_waitlater</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_waitlater_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_waitlater_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_waitlater_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_wontwork</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_wontwork]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_wontwork</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_barrier_reason_wontwork_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_barrier_reason_wontwork_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_barrier_reason_wontwork_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_concerned_sideeffects</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_concerned_sideeffects]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_concerned_sideeffects</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_concerned_sideeffects_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_concerned_sideeffects_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_concerned_sideeffects_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_vaccine_barrier_no_appointments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_vaccine_barrier_no_appointments]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_vaccine_barrier_no_appointments</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.pct_vaccine_barrier_no_appointments_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_vaccine_barrier_no_appointments_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.pct_vaccine_barrier_no_appointments_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.sample_size</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sample_size]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.sample_size</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.survey_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[survey_date]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.survey_date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.vaccine_barrier_no_appointments_se</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vaccine_barrier_no_appointments_se]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.vaccine_barrier_no_appointments_se</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Value.vaccine_barrier_no_appointments_se_unw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vaccine_barrier_no_appointments_se_unw]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>data.Value.vaccine_barrier_no_appointments_se_unw</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[india_concern_side_effects.json+]</parent-name>
+            <remote-alias>status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per data]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [Document Index (generated)] : COUNTD([data Index (generated)]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at data level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per india_concern_side_effects.json+]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at india_concern_side_effects.json+ level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[Table Name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Table Name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='india_concern_side_effects.json' datatype='table' name='[__tableau_internal_object_id__].[india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F]' role='measure' type='quantitative' />
+      <column caption='Barrier Reason Dontbelieve Se' datatype='real' name='[barrier_reason_dontbelieve_se]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_dontbelieve_se</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Dontbelieve Se Unw' datatype='real' name='[barrier_reason_dontbelieve_se_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_dontbelieve_se_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Dontlike Se' datatype='real' name='[barrier_reason_dontlike_se]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_dontlike_se</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Dontlike Se Unw' datatype='real' name='[barrier_reason_dontlike_se_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_dontlike_se_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Waitlater Se' datatype='real' name='[barrier_reason_waitlater_se]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_waitlater_se</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Waitlater Se Unw' datatype='real' name='[barrier_reason_waitlater_se_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_waitlater_se_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Wontwork Se' datatype='real' name='[barrier_reason_wontwork_se]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_wontwork_se</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Barrier Reason Wontwork Se Unw' datatype='real' name='[barrier_reason_wontwork_se_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.barrier_reason_wontwork_se_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Concerned Sideeffects Se' datatype='real' name='[concerned_sideeffects_se]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.concerned_sideeffects_se</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Concerned Sideeffects Se Unw' datatype='real' name='[concerned_sideeffects_se_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.concerned_sideeffects_se_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.country</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[data Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>data.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Gid 0' datatype='string' name='[gid_0]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.gid_0</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.iso_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Dontbelieve' datatype='real' name='[pct_barrier_reason_dontbelieve]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_dontbelieve</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Dontbelieve Unw' datatype='real' name='[pct_barrier_reason_dontbelieve_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_dontbelieve_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Dontlike' datatype='real' name='[pct_barrier_reason_dontlike]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_dontlike</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Dontlike Unw' datatype='real' name='[pct_barrier_reason_dontlike_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_dontlike_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Waitlater' datatype='real' name='[pct_barrier_reason_waitlater]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_waitlater</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Waitlater Unw' datatype='real' name='[pct_barrier_reason_waitlater_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_waitlater_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Wontwork' datatype='real' name='[pct_barrier_reason_wontwork]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_wontwork</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Barrier Reason Wontwork Unw' datatype='real' name='[pct_barrier_reason_wontwork_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_barrier_reason_wontwork_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Concerned Sideeffects' datatype='real' name='[pct_concerned_sideeffects]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_concerned_sideeffects</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Concerned Sideeffects Unw' datatype='real' name='[pct_concerned_sideeffects_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_concerned_sideeffects_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Vaccine Barrier No Appointments' datatype='real' name='[pct_vaccine_barrier_no_appointments]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_vaccine_barrier_no_appointments</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Pct Vaccine Barrier No Appointments Unw' datatype='real' name='[pct_vaccine_barrier_no_appointments_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.pct_vaccine_barrier_no_appointments_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Sample Size' datatype='real' name='[sample_size]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.sample_size</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>status</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Survey Date' datatype='string' name='[survey_date]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.survey_date</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Vaccine Barrier No Appointments Se' datatype='real' name='[vaccine_barrier_no_appointments_se]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.vaccine_barrier_no_appointments_se</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Vaccine Barrier No Appointments Se Unw' datatype='real' name='[vaccine_barrier_no_appointments_se_unw]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.Value.vaccine_barrier_no_appointments_se_unw</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[barrier_reason_waitlater_se]' derivation='Avg' name='[avg:barrier_reason_waitlater_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Avg' name='[avg:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_waitlater_se]' derivation='Count' name='[cnt:barrier_reason_waitlater_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Count' name='[cnt:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_waitlater_se]' derivation='CountD' name='[ctd:barrier_reason_waitlater_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='CountD' name='[ctd:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[cum:sum:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[barrier_reason_dontbelieve_se]' derivation='Max' name='[max:barrier_reason_dontbelieve_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_waitlater_se]' derivation='Max' name='[max:barrier_reason_waitlater_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Max' name='[max:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Median' name='[med:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[pcdf:sum:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Avg' name='[pcrk:avg:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[pcrk:sum:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[pcto:sum:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance aggregation-param='5' column='[barrier_reason_dontbelieve_se]' derivation='Percentile' name='[prc5:barrier_reason_dontbelieve_se:qk]' pivot='key' type='quantitative' />
+      <column-instance aggregation-param='5' column='[barrier_reason_dontlike_se]' derivation='Percentile' name='[prc5:barrier_reason_dontlike_se:qk]' pivot='key' type='quantitative' />
+      <column-instance aggregation-param='90' column='[barrier_reason_dontbelieve_se]' derivation='Percentile' name='[prc90:barrier_reason_dontbelieve_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Stdev' name='[std:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_dontbelieve_se]' derivation='Sum' name='[sum:barrier_reason_dontbelieve_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_dontbelieve_se_unw]' derivation='Sum' name='[sum:barrier_reason_dontbelieve_se_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_dontlike_se]' derivation='Sum' name='[sum:barrier_reason_dontlike_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[barrier_reason_waitlater_se]' derivation='Sum' name='[sum:barrier_reason_waitlater_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[concerned_sideeffects_se]' derivation='Sum' name='[sum:concerned_sideeffects_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_dontbelieve]' derivation='Sum' name='[sum:pct_barrier_reason_dontbelieve:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_dontlike]' derivation='Sum' name='[sum:pct_barrier_reason_dontlike:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater]' derivation='Sum' name='[sum:pct_barrier_reason_waitlater:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[sum:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_wontwork]' derivation='Sum' name='[sum:pct_barrier_reason_wontwork:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_wontwork_unw]' derivation='Sum' name='[sum:pct_barrier_reason_wontwork_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_concerned_sideeffects]' derivation='Sum' name='[sum:pct_concerned_sideeffects:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_concerned_sideeffects_unw]' derivation='Sum' name='[sum:pct_concerned_sideeffects_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_vaccine_barrier_no_appointments]' derivation='Sum' name='[sum:pct_vaccine_barrier_no_appointments:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_vaccine_barrier_no_appointments_unw]' derivation='Sum' name='[sum:pct_vaccine_barrier_no_appointments_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sample_size]' derivation='Sum' name='[sum:sample_size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vaccine_barrier_no_appointments_se]' derivation='Sum' name='[sum:vaccine_barrier_no_appointments_se:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Var' name='[var:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Avg' name='[win:avg:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='CountD' name='[win:ctd:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Min' name='[win:min:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[win:sum:pct_barrier_reason_waitlater_unw:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[survey_date]' ordering-type='Field' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Sum' name='[win:sum:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Data' role='dimensions'>
+        <folder-item name='[country]' type='field' />
+        <folder-item name='[data Index (generated)]' type='field' />
+        <folder-item name='[gid_0]' type='field' />
+        <folder-item name='[iso_code]' type='field' />
+        <folder-item name='[survey_date]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='India Concern Side Effects' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[Table Name]' type='field' />
+        <folder-item name='[status]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Data'>
+          <folder-item name='[country]' type='field' />
+          <folder-item name='[data Index (generated)]' type='field' />
+          <folder-item name='[gid_0]' type='field' />
+          <folder-item name='[iso_code]' type='field' />
+          <folder-item name='[survey_date]' type='field' />
+        </folder>
+        <folder name='India Concern Side Effects'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[Table Name]' type='field' />
+          <folder-item name='[status]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[max:barrier_reason_dontbelieve_se:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[prc5:barrier_reason_dontbelieve_se:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[prc90:barrier_reason_dontbelieve_se:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_dontbelieve_se:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[avg:barrier_reason_waitlater_se:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[cnt:barrier_reason_waitlater_se:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[ctd:barrier_reason_waitlater_se:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[max:barrier_reason_waitlater_se:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_waitlater_se:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[prc5:barrier_reason_dontlike_se:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_dontlike_se:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[avg:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[cnt:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[ctd:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[cum:sum:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[max:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[med:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[pcdf:sum:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[pcrk:avg:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[pcrk:sum:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[pcto:sum:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[std:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:sample_size:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[var:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:ctd:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:min:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:sum:pct_barrier_reason_waitlater_unw:qk:2]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:sum:pct_barrier_reason_waitlater_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:concerned_sideeffects_se:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_dontbelieve_se_unw:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:vaccine_barrier_no_appointments_se:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='india_concern_side_effects.json' id='india_concern_side_effects.json_B16AFEA3E802474B8C21B75692A0655F'>
+            <properties context=''>
+              <relation all='true' name='india_concern_side_effects.json+' type='union'>
+                <columns>
+                  <column datatype='string' name='Table Name' />
+                  <column datatype='integer' name='Document Index (generated)' />
+                  <column datatype='integer' name='data.Index (generated)' />
+                  <column datatype='real' name='data.Value.barrier_reason_dontbelieve_se' />
+                  <column datatype='real' name='data.Value.barrier_reason_dontbelieve_se_unw' />
+                  <column datatype='real' name='data.Value.barrier_reason_dontlike_se' />
+                  <column datatype='real' name='data.Value.barrier_reason_dontlike_se_unw' />
+                  <column datatype='real' name='data.Value.barrier_reason_waitlater_se' />
+                  <column datatype='real' name='data.Value.barrier_reason_waitlater_se_unw' />
+                  <column datatype='real' name='data.Value.barrier_reason_wontwork_se' />
+                  <column datatype='real' name='data.Value.barrier_reason_wontwork_se_unw' />
+                  <column datatype='real' name='data.Value.concerned_sideeffects_se' />
+                  <column datatype='real' name='data.Value.concerned_sideeffects_se_unw' />
+                  <column datatype='string' name='data.Value.country' />
+                  <column datatype='string' name='data.Value.gid_0' />
+                  <column datatype='string' name='data.Value.iso_code' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_dontbelieve' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_dontbelieve_unw' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_dontlike' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_dontlike_unw' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_waitlater' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_waitlater_unw' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_wontwork' />
+                  <column datatype='real' name='data.Value.pct_barrier_reason_wontwork_unw' />
+                  <column datatype='real' name='data.Value.pct_concerned_sideeffects' />
+                  <column datatype='real' name='data.Value.pct_concerned_sideeffects_unw' />
+                  <column datatype='real' name='data.Value.pct_vaccine_barrier_no_appointments' />
+                  <column datatype='real' name='data.Value.pct_vaccine_barrier_no_appointments_unw' />
+                  <column datatype='real' name='data.Value.sample_size' />
+                  <column datatype='string' name='data.Value.survey_date' />
+                  <column datatype='real' name='data.Value.vaccine_barrier_no_appointments_se' />
+                  <column datatype='real' name='data.Value.vaccine_barrier_no_appointments_se_unw' />
+                  <column datatype='string' name='status' />
+                </columns>
+                <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_concern_side_effects.json' table='[india_concern_side_effects.json]' type='table' />
+                <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_barrier_no_appointments.json' table='[india_vaccine_barrier_no_appointments.json]' type='table' />
+                <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_dont_belive.json' table='[india_vaccine_dont_belive.json]' type='table' />
+                <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_dont_like.json' table='[india_vaccine_dont_like.json]' type='table' />
+                <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_vaccine_wont_work.json' table='[india_vaccine_wont_work.json]' type='table' />
+                <relation connection='semistructpassivestore-direct.1qpc23y1iuw2ei1eqynbt1851p4m' name='india_wait_later.json' table='[india_wait_later.json]' type='table' />
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='India_01'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='india_concern_side_effects' name='federated.02qvrzo0leqr5m1h9naim0g33afo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02qvrzo0leqr5m1h9naim0g33afo'>
+            <column caption='Barrier Reason Dontbelieve Se' datatype='real' name='[barrier_reason_dontbelieve_se]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.barrier_reason_dontbelieve_se</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Barrier Reason Dontbelieve Se Unw' datatype='real' name='[barrier_reason_dontbelieve_se_unw]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.barrier_reason_dontbelieve_se_unw</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[survey_date]' derivation='None' name='[none:survey_date:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Barrier Reason Dontbelieve' datatype='real' name='[pct_barrier_reason_dontbelieve]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_dontbelieve</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Dontlike' datatype='real' name='[pct_barrier_reason_dontlike]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_dontlike</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Waitlater' datatype='real' name='[pct_barrier_reason_waitlater]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_waitlater</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Waitlater Unw' datatype='real' name='[pct_barrier_reason_waitlater_unw]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_waitlater_unw</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Wontwork' datatype='real' name='[pct_barrier_reason_wontwork]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_wontwork</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Concerned Sideeffects' datatype='real' name='[pct_concerned_sideeffects]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_concerned_sideeffects</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Vaccine Barrier No Appointments' datatype='real' name='[pct_vaccine_barrier_no_appointments]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_vaccine_barrier_no_appointments</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[barrier_reason_dontbelieve_se]' derivation='Sum' name='[sum:barrier_reason_dontbelieve_se:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[barrier_reason_dontbelieve_se_unw]' derivation='Sum' name='[sum:barrier_reason_dontbelieve_se_unw:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_dontbelieve]' derivation='Sum' name='[sum:pct_barrier_reason_dontbelieve:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_dontlike]' derivation='Sum' name='[sum:pct_barrier_reason_dontlike:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_waitlater]' derivation='Sum' name='[sum:pct_barrier_reason_waitlater:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_wontwork]' derivation='Sum' name='[sum:pct_barrier_reason_wontwork:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_concerned_sideeffects]' derivation='Sum' name='[sum:pct_concerned_sideeffects:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_vaccine_barrier_no_appointments]' derivation='Sum' name='[sum:pct_vaccine_barrier_no_appointments:qk]' pivot='key' type='quantitative' />
+            <column caption='Survey Date' datatype='string' name='[survey_date]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.survey_date</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Avg' name='[win:avg:pct_barrier_reason_waitlater_unw:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_dontbelieve_se:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_dontbelieve_se_unw:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]'>
+            <groupfilter function='level-members' level='[none:survey_date:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;20210501&quot;</bucket>
+              <bucket>&quot;20210502&quot;</bucket>
+              <bucket>&quot;20210503&quot;</bucket>
+              <bucket>&quot;20210504&quot;</bucket>
+              <bucket>&quot;20210505&quot;</bucket>
+              <bucket>&quot;20210506&quot;</bucket>
+              <bucket>&quot;20210507&quot;</bucket>
+              <bucket>&quot;20210508&quot;</bucket>
+              <bucket>&quot;20210509&quot;</bucket>
+              <bucket>&quot;20210510&quot;</bucket>
+              <bucket>&quot;20210511&quot;</bucket>
+              <bucket>&quot;20210512&quot;</bucket>
+              <bucket>&quot;20210513&quot;</bucket>
+              <bucket>&quot;20210514&quot;</bucket>
+              <bucket>&quot;20210515&quot;</bucket>
+              <bucket>&quot;20210516&quot;</bucket>
+              <bucket>&quot;20210517&quot;</bucket>
+              <bucket>&quot;20210518&quot;</bucket>
+              <bucket>&quot;20210519&quot;</bucket>
+              <bucket>&quot;20210520&quot;</bucket>
+              <bucket>&quot;20210521&quot;</bucket>
+              <bucket>&quot;20210522&quot;</bucket>
+              <bucket>&quot;20210523&quot;</bucket>
+              <bucket>&quot;20210524&quot;</bucket>
+              <bucket>&quot;20210525&quot;</bucket>
+              <bucket>&quot;20210526&quot;</bucket>
+              <bucket>&quot;20210527&quot;</bucket>
+              <bucket>&quot;20210528&quot;</bucket>
+              <bucket>&quot;20210529&quot;</bucket>
+              <bucket>&quot;20210530&quot;</bucket>
+              <bucket>&quot;20210531&quot;</bucket>
+              <bucket>&quot;20210601&quot;</bucket>
+              <bucket>&quot;20210602&quot;</bucket>
+              <bucket>&quot;20210603&quot;</bucket>
+              <bucket>&quot;20210604&quot;</bucket>
+              <bucket>&quot;20210605&quot;</bucket>
+              <bucket>&quot;20210606&quot;</bucket>
+              <bucket>&quot;20210607&quot;</bucket>
+              <bucket>&quot;20210608&quot;</bucket>
+              <bucket>&quot;20210609&quot;</bucket>
+              <bucket>&quot;20210610&quot;</bucket>
+              <bucket>&quot;20210611&quot;</bucket>
+              <bucket>&quot;20210612&quot;</bucket>
+              <bucket>&quot;20210613&quot;</bucket>
+              <bucket>&quot;20210614&quot;</bucket>
+              <bucket>&quot;20210615&quot;</bucket>
+              <bucket>&quot;20210616&quot;</bucket>
+              <bucket>&quot;20210617&quot;</bucket>
+              <bucket>&quot;20210618&quot;</bucket>
+              <bucket>&quot;20210619&quot;</bucket>
+              <bucket>&quot;20210620&quot;</bucket>
+              <bucket>&quot;20210621&quot;</bucket>
+              <bucket>&quot;20210622&quot;</bucket>
+              <bucket>&quot;20210623&quot;</bucket>
+              <bucket>&quot;20210624&quot;</bucket>
+              <bucket>&quot;20210625&quot;</bucket>
+              <bucket>&quot;20210626&quot;</bucket>
+              <bucket>&quot;20210627&quot;</bucket>
+              <bucket>&quot;20210628&quot;</bucket>
+              <bucket>&quot;20210629&quot;</bucket>
+              <bucket>&quot;20210630&quot;</bucket>
+              <bucket>&quot;20210701&quot;</bucket>
+              <bucket>&quot;20210702&quot;</bucket>
+              <bucket>&quot;20210703&quot;</bucket>
+              <bucket>&quot;20210704&quot;</bucket>
+              <bucket>&quot;20210705&quot;</bucket>
+              <bucket>&quot;20210706&quot;</bucket>
+              <bucket>&quot;20210707&quot;</bucket>
+              <bucket>&quot;20210708&quot;</bucket>
+              <bucket>&quot;20210709&quot;</bucket>
+              <bucket>&quot;20210710&quot;</bucket>
+              <bucket>&quot;20210711&quot;</bucket>
+              <bucket>&quot;20210712&quot;</bucket>
+              <bucket>&quot;20210713&quot;</bucket>
+              <bucket>&quot;20210714&quot;</bucket>
+              <bucket>&quot;20210715&quot;</bucket>
+              <bucket>&quot;20210716&quot;</bucket>
+              <bucket>&quot;20210718&quot;</bucket>
+              <bucket>&quot;20210719&quot;</bucket>
+              <bucket>&quot;20210720&quot;</bucket>
+              <bucket>&quot;20210721&quot;</bucket>
+              <bucket>&quot;20210722&quot;</bucket>
+              <bucket>&quot;20210723&quot;</bucket>
+              <bucket>&quot;20210724&quot;</bucket>
+              <bucket>&quot;20210725&quot;</bucket>
+              <bucket>&quot;20210726&quot;</bucket>
+              <bucket>&quot;20210727&quot;</bucket>
+              <bucket>&quot;20210728&quot;</bucket>
+              <bucket>&quot;20210729&quot;</bucket>
+              <bucket>&quot;20210730&quot;</bucket>
+              <bucket>&quot;20210731&quot;</bucket>
+              <bucket>&quot;20210801&quot;</bucket>
+              <bucket>&quot;20210802&quot;</bucket>
+              <bucket>&quot;20210803&quot;</bucket>
+              <bucket>&quot;20210804&quot;</bucket>
+              <bucket>&quot;20210805&quot;</bucket>
+              <bucket>&quot;20210806&quot;</bucket>
+              <bucket>&quot;20210807&quot;</bucket>
+              <bucket>&quot;20210808&quot;</bucket>
+              <bucket>&quot;20210809&quot;</bucket>
+              <bucket>&quot;20210810&quot;</bucket>
+              <bucket>&quot;20210811&quot;</bucket>
+              <bucket>&quot;20210812&quot;</bucket>
+              <bucket>&quot;20210813&quot;</bucket>
+              <bucket>&quot;20210814&quot;</bucket>
+              <bucket>&quot;20210815&quot;</bucket>
+              <bucket>&quot;20210816&quot;</bucket>
+              <bucket>&quot;20210817&quot;</bucket>
+              <bucket>&quot;20210818&quot;</bucket>
+              <bucket>&quot;20210819&quot;</bucket>
+              <bucket>&quot;20210820&quot;</bucket>
+              <bucket>&quot;20210821&quot;</bucket>
+              <bucket>&quot;20210822&quot;</bucket>
+              <bucket>&quot;20210823&quot;</bucket>
+              <bucket>&quot;20210824&quot;</bucket>
+              <bucket>&quot;20210825&quot;</bucket>
+              <bucket>&quot;20210826&quot;</bucket>
+              <bucket>&quot;20210827&quot;</bucket>
+              <bucket>&quot;20210828&quot;</bucket>
+              <bucket>&quot;20210829&quot;</bucket>
+              <bucket>&quot;20210831&quot;</bucket>
+              <bucket>&quot;20210901&quot;</bucket>
+              <bucket>&quot;20210902&quot;</bucket>
+              <bucket>&quot;20210903&quot;</bucket>
+              <bucket>&quot;20210830&quot;</bucket>
+              <bucket>&quot;20210904&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]</column>
+            <column>[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]</column>
+            <column>[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:barrier_reason_dontbelieve_se:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='15' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='16' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='17' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='18' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='19' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='20' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+          <pane id='21' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+          </pane>
+        </panes>
+        <rows>([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk] + [federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk])))))</rows>
+        <cols>[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]</cols>
+      </table>
+      <simple-id uuid='{CBB54E08-E9A4-4ACC-AB3E-4BE4BF04875F}' />
+    </worksheet>
+    <worksheet name='India_SampleSize'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='india_concern_side_effects' name='federated.02qvrzo0leqr5m1h9naim0g33afo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02qvrzo0leqr5m1h9naim0g33afo'>
+            <column-instance column='[survey_date]' derivation='None' name='[none:survey_date:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Barrier Reason Dontbelieve' datatype='real' name='[pct_barrier_reason_dontbelieve]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_dontbelieve</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Dontlike' datatype='real' name='[pct_barrier_reason_dontlike]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_dontlike</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Waitlater' datatype='real' name='[pct_barrier_reason_waitlater]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_waitlater</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Waitlater Unw' datatype='real' name='[pct_barrier_reason_waitlater_unw]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_waitlater_unw</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Barrier Reason Wontwork' datatype='real' name='[pct_barrier_reason_wontwork]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_barrier_reason_wontwork</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Concerned Sideeffects' datatype='real' name='[pct_concerned_sideeffects]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_concerned_sideeffects</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Pct Vaccine Barrier No Appointments' datatype='real' name='[pct_vaccine_barrier_no_appointments]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.pct_vaccine_barrier_no_appointments</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Sample Size' datatype='real' name='[sample_size]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.sample_size</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[pct_barrier_reason_dontbelieve]' derivation='Sum' name='[sum:pct_barrier_reason_dontbelieve:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_dontlike]' derivation='Sum' name='[sum:pct_barrier_reason_dontlike:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_waitlater]' derivation='Sum' name='[sum:pct_barrier_reason_waitlater:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_barrier_reason_wontwork]' derivation='Sum' name='[sum:pct_barrier_reason_wontwork:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_concerned_sideeffects]' derivation='Sum' name='[sum:pct_concerned_sideeffects:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pct_vaccine_barrier_no_appointments]' derivation='Sum' name='[sum:pct_vaccine_barrier_no_appointments:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sample_size]' derivation='Sum' name='[sum:sample_size:qk]' pivot='key' type='quantitative' />
+            <column caption='Survey Date' datatype='string' name='[survey_date]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>data.Value.survey_date</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[pct_barrier_reason_waitlater_unw]' derivation='Avg' name='[win:avg:pct_barrier_reason_waitlater_unw:qk:1]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' from='-2' ordering-field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]' ordering-type='Field' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]'>
+            <groupfilter function='level-members' level='[none:survey_date:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;20210501&quot;</bucket>
+              <bucket>&quot;20210502&quot;</bucket>
+              <bucket>&quot;20210503&quot;</bucket>
+              <bucket>&quot;20210504&quot;</bucket>
+              <bucket>&quot;20210505&quot;</bucket>
+              <bucket>&quot;20210506&quot;</bucket>
+              <bucket>&quot;20210507&quot;</bucket>
+              <bucket>&quot;20210508&quot;</bucket>
+              <bucket>&quot;20210509&quot;</bucket>
+              <bucket>&quot;20210510&quot;</bucket>
+              <bucket>&quot;20210511&quot;</bucket>
+              <bucket>&quot;20210512&quot;</bucket>
+              <bucket>&quot;20210513&quot;</bucket>
+              <bucket>&quot;20210514&quot;</bucket>
+              <bucket>&quot;20210515&quot;</bucket>
+              <bucket>&quot;20210516&quot;</bucket>
+              <bucket>&quot;20210517&quot;</bucket>
+              <bucket>&quot;20210518&quot;</bucket>
+              <bucket>&quot;20210519&quot;</bucket>
+              <bucket>&quot;20210520&quot;</bucket>
+              <bucket>&quot;20210521&quot;</bucket>
+              <bucket>&quot;20210522&quot;</bucket>
+              <bucket>&quot;20210523&quot;</bucket>
+              <bucket>&quot;20210524&quot;</bucket>
+              <bucket>&quot;20210525&quot;</bucket>
+              <bucket>&quot;20210526&quot;</bucket>
+              <bucket>&quot;20210527&quot;</bucket>
+              <bucket>&quot;20210528&quot;</bucket>
+              <bucket>&quot;20210529&quot;</bucket>
+              <bucket>&quot;20210530&quot;</bucket>
+              <bucket>&quot;20210531&quot;</bucket>
+              <bucket>&quot;20210601&quot;</bucket>
+              <bucket>&quot;20210602&quot;</bucket>
+              <bucket>&quot;20210603&quot;</bucket>
+              <bucket>&quot;20210604&quot;</bucket>
+              <bucket>&quot;20210605&quot;</bucket>
+              <bucket>&quot;20210606&quot;</bucket>
+              <bucket>&quot;20210607&quot;</bucket>
+              <bucket>&quot;20210608&quot;</bucket>
+              <bucket>&quot;20210609&quot;</bucket>
+              <bucket>&quot;20210610&quot;</bucket>
+              <bucket>&quot;20210611&quot;</bucket>
+              <bucket>&quot;20210612&quot;</bucket>
+              <bucket>&quot;20210613&quot;</bucket>
+              <bucket>&quot;20210614&quot;</bucket>
+              <bucket>&quot;20210615&quot;</bucket>
+              <bucket>&quot;20210616&quot;</bucket>
+              <bucket>&quot;20210617&quot;</bucket>
+              <bucket>&quot;20210618&quot;</bucket>
+              <bucket>&quot;20210619&quot;</bucket>
+              <bucket>&quot;20210620&quot;</bucket>
+              <bucket>&quot;20210621&quot;</bucket>
+              <bucket>&quot;20210622&quot;</bucket>
+              <bucket>&quot;20210623&quot;</bucket>
+              <bucket>&quot;20210624&quot;</bucket>
+              <bucket>&quot;20210625&quot;</bucket>
+              <bucket>&quot;20210626&quot;</bucket>
+              <bucket>&quot;20210627&quot;</bucket>
+              <bucket>&quot;20210628&quot;</bucket>
+              <bucket>&quot;20210629&quot;</bucket>
+              <bucket>&quot;20210630&quot;</bucket>
+              <bucket>&quot;20210701&quot;</bucket>
+              <bucket>&quot;20210702&quot;</bucket>
+              <bucket>&quot;20210703&quot;</bucket>
+              <bucket>&quot;20210704&quot;</bucket>
+              <bucket>&quot;20210705&quot;</bucket>
+              <bucket>&quot;20210706&quot;</bucket>
+              <bucket>&quot;20210707&quot;</bucket>
+              <bucket>&quot;20210708&quot;</bucket>
+              <bucket>&quot;20210709&quot;</bucket>
+              <bucket>&quot;20210710&quot;</bucket>
+              <bucket>&quot;20210711&quot;</bucket>
+              <bucket>&quot;20210712&quot;</bucket>
+              <bucket>&quot;20210713&quot;</bucket>
+              <bucket>&quot;20210714&quot;</bucket>
+              <bucket>&quot;20210715&quot;</bucket>
+              <bucket>&quot;20210716&quot;</bucket>
+              <bucket>&quot;20210718&quot;</bucket>
+              <bucket>&quot;20210719&quot;</bucket>
+              <bucket>&quot;20210720&quot;</bucket>
+              <bucket>&quot;20210721&quot;</bucket>
+              <bucket>&quot;20210722&quot;</bucket>
+              <bucket>&quot;20210723&quot;</bucket>
+              <bucket>&quot;20210724&quot;</bucket>
+              <bucket>&quot;20210725&quot;</bucket>
+              <bucket>&quot;20210726&quot;</bucket>
+              <bucket>&quot;20210727&quot;</bucket>
+              <bucket>&quot;20210728&quot;</bucket>
+              <bucket>&quot;20210729&quot;</bucket>
+              <bucket>&quot;20210730&quot;</bucket>
+              <bucket>&quot;20210731&quot;</bucket>
+              <bucket>&quot;20210801&quot;</bucket>
+              <bucket>&quot;20210802&quot;</bucket>
+              <bucket>&quot;20210803&quot;</bucket>
+              <bucket>&quot;20210804&quot;</bucket>
+              <bucket>&quot;20210805&quot;</bucket>
+              <bucket>&quot;20210806&quot;</bucket>
+              <bucket>&quot;20210807&quot;</bucket>
+              <bucket>&quot;20210808&quot;</bucket>
+              <bucket>&quot;20210809&quot;</bucket>
+              <bucket>&quot;20210810&quot;</bucket>
+              <bucket>&quot;20210811&quot;</bucket>
+              <bucket>&quot;20210812&quot;</bucket>
+              <bucket>&quot;20210813&quot;</bucket>
+              <bucket>&quot;20210814&quot;</bucket>
+              <bucket>&quot;20210815&quot;</bucket>
+              <bucket>&quot;20210816&quot;</bucket>
+              <bucket>&quot;20210817&quot;</bucket>
+              <bucket>&quot;20210818&quot;</bucket>
+              <bucket>&quot;20210819&quot;</bucket>
+              <bucket>&quot;20210820&quot;</bucket>
+              <bucket>&quot;20210821&quot;</bucket>
+              <bucket>&quot;20210822&quot;</bucket>
+              <bucket>&quot;20210823&quot;</bucket>
+              <bucket>&quot;20210824&quot;</bucket>
+              <bucket>&quot;20210825&quot;</bucket>
+              <bucket>&quot;20210826&quot;</bucket>
+              <bucket>&quot;20210827&quot;</bucket>
+              <bucket>&quot;20210828&quot;</bucket>
+              <bucket>&quot;20210829&quot;</bucket>
+              <bucket>&quot;20210831&quot;</bucket>
+              <bucket>&quot;20210901&quot;</bucket>
+              <bucket>&quot;20210902&quot;</bucket>
+              <bucket>&quot;20210903&quot;</bucket>
+              <bucket>&quot;20210830&quot;</bucket>
+              <bucket>&quot;20210904&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk:1]' included-values='in-range' />
+          <slices>
+            <column>[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]</column>
+            <column>[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk:1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.02qvrzo0leqr5m1h9naim0g33afo].[win:avg:pct_barrier_reason_waitlater_unw:qk:1]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk] * [federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:sample_size:qk])</rows>
+        <cols>([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontbelieve:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_dontlike:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_waitlater:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_barrier_reason_wontwork:qk] + ([federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_concerned_sideeffects:qk] + [federated.02qvrzo0leqr5m1h9naim0g33afo].[sum:pct_vaccine_barrier_no_appointments:qk])))))</cols>
+      </table>
+      <simple-id uuid='{6E5DFD47-CD2F-4BC3-AA88-EB2D6243AA38}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC5A4962-6420-41AB-9D45-4B6A94A91DA6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='India_01'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02qvrzo0leqr5m1h9naim0g33afo].[:Measure Names]</field>
+            <field>[federated.02qvrzo0leqr5m1h9naim0g33afo].[none:survey_date:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2F6A1E81-ACDD-463E-B2BE-E853EE8C8A2E}' />
+    </window>
+    <window class='worksheet' name='India_SampleSize'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ED1EAE62-E097-42AD-A602-918A3D50E312}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A3F4D540-1DA5-49C6-8C26-2008A6E47A3A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='India_01' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='India_SampleSize' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
